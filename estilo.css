@@ -8,7 +8,9 @@ body {
     padding: 0;
 }
 /* Reusable */
-
+.filter--shadow {
+    filter: drop-shadow(3px 3px 4px black);
+}
 /* Cabecera */
 .header {
     width: 100%;
@@ -40,7 +42,6 @@ body {
 }
 .contenedor__img {
     width: calc(30vw + 80px);
-    filter: drop-shadow(3px 3px 4px black);
     position: relative;
     margin-top: 40px;
 }
@@ -52,10 +53,10 @@ body {
     position: relative;
 }
 .main--ctitle {
-    width: 500px;
-    position: relative;
-    top: 50px;
-    left: 50px;
+    width: 90vw;
+    margin: 50px 0 0 50px;
+    display: inline-block;
+
     font-size: calc(1vw + 1em);
 }
 
@@ -117,27 +118,80 @@ body {
     width: 100%;
     height: 100vh;
 }
-.main__descripcion__img {
-    width:  40vw;
-    position: relative;
-    top: 50px;
-    left: 50px;
+.main--ctitle .title {
+    text-align: center;
 }
-.descripcion__img--experiencia {
-    width: 300px;
-    min-width: 10vw;
-}
+
 .descripcion__notas {
-    width: 50vw;
-    height: 200px;
+    width: 90vw;
+    height: max-content;
+    padding: 10px;
+    margin-left: 60px;
     display: flex;
-    position: relative;
-    left: 300px;
-    border: 1px solid;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
 }
-/*
-Cuando la oración es afirmativa, la pregunta es negativa, cuando la oración es negativa, la pregunta es afirmativa.
+.descripcion--notas {
+    width: 250px;
+    height: 300px;
+    padding: 10px;
+    margin: 10px;
+    display: inline-block;
+    background: #08f2;
+    border-radius: 10px;
+    font-size: 1.2em;
+    overflow: auto;
+    
+}
+.notas__img {
+    margin: 30px 30px 0 30px;
+}
 
-Si un verbo auxiliar está presente en una oración, es lo mismo en la etiqueta de pregunta.
+/* Carreras UX */
+.main__carreras__ux {
+    width: 100%;
+    height: 100vh;
+}
 
-Si el verbo auxiliar no está en la oración, tenemos que usar do o did */
+.carreras__ux {
+    width: 95vw;
+    height: max-content;
+    margin-left: auto;
+    margin-right: auto;
+}
+.carrera {
+    width: 350px;
+    height: 430px;
+    margin: 55px 60px;
+    display: inline-block;
+    background: #08f2;
+    border-radius: 10px;
+}
+.carrera__ux__ctitle {
+    width: 100%;
+    padding: 10px;
+    text-align: center;
+}
+.carrera__ux__img {
+    width: 100%;
+    height: max-content;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.carrera__ux--img {
+    width: 100px;
+}
+.carrera__ux--txt {
+    width: 100%;
+    height: 232px;
+    padding: 10px;
+    text-align: center;
+
+}
+.inline__block{
+    display: inline-block;
+    color: rebeccapurple;
+}
